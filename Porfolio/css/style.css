@@ -631,3 +631,15 @@ header .navbar ul li a:hover {
     transform: translate(-50%, -50%);
     color: #fff;
 }
+
+.centered {
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
