@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,38 +9,40 @@
     <link rel="stylesheet" href="css/style.css">
 
 </head>
-<body>
+
+<body scroll="no" style="overflow: hidden">
     <!-- <div class="cursor-1"></div>
     <div class="cursor-2"></div>
      -->
-    
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
-<script src="js/script.js"></script>
 
-<header>
 
-   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+    <script src="js/script.js"></script>
 
-    <div class="user">
-      <img class="masking" src="images/profile-2.png" alt="" >
-        <h3 class="name">AYHAN HAKAN TEKIR</h3>
-        <p class="post">Jr. IOS developer</p>
-    </div>
-   
-    <nav class="navbar">
-        <ul>
-            <li><a href="index.html">home st</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="education.html">education</a></li>
-            <li><a href="portfolio.html">portfolio</a></li>
-            <li><a href="contact.html">contact</a></li>
-        </ul>
-    </nav>
-   
-    <div class="blob">
-      
-      <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+    <header>
+
+
+
+        <div class="user">
+            <img class="masking" src="images/profile-2.png" alt="">
+            <h3 class="name">AYHAN HAKAN TEKIR</h3>
+            <p class="post">Jr. IOS developer</p>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="portfolio.html">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="blob">
+
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
           <g transform="translate(139.82472229003906, -8.185081481933594)">
             <defs>
               <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -66,78 +69,107 @@
           </clipPath>
           </g>
         </svg>
-  </div>
-</header>
+        </div>
+    </header>
 
 
-<!-- header section ends -->
+    <!-- header section ends -->
 
-<div id="menu" class="fas fa-bars"></div>
+    <div id="menu" class="fas fa-bars"></div>
 
-<!-- home section starts  -->
+    <!-- home section starts  -->
 
-<section class="home" id="home">
+    <section class="home" id="home">
+        <div class="boxContainer">
+            <div class="boxes">
+                <h3 class="outline">Welcome</h3>
+                <h1 class="outline">I'M <span>Ayhan Hakan Tekir</span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
+                </p>
+                <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+            </div>
+        </div>
 
-    <h3>HI THERE !</h3>
-    <h1>I'M <span>Ayhan Hakan Tekir</span></h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
-    </p>
-    <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
-   
- 
-</section>
- 
-<!-- home section ends -->
+        <div>
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
+          />
+        </defs>
+        <g class="parallax">
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="0"
+            fill="rgba(0, 0, 0, 0.3"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="3"
+            fill="rgba(0, 0, 0, 0.3"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="48"
+            y="5"
+            fill="rgba(0, 0, 0, 0.3"
+          />
+        <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0, 0, 0, 0.3" />
+        </g>
+      </svg>
+        </div>
+        <div>
+            <h2 class="bottomText">®Copyrigh 2022 AHT. <a class="bottomLink" href="contact.html" color="#fff">You can get more info</a> </h2>
+        </div>
+    </section>
 
-<!-- jquery cdn link  -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
-<div>
-  <svg
-    class="waves"
-    xmlns="http://www.w3.org/2000/svg"
-    xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="0 24 150 28"
-    preserveAspectRatio="none"
-    shape-rendering="auto"
-  >
-    <defs>
-      <path
-        id="gentle-wave"
-        d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"
-      />
-    </defs>
-    <g class="parallax">
-      <use
-        xlink:href="#gentle-wave"
-        x="48"
-        y="0"
-        fill="rgba(0, 0, 0, 0.3"
-        fill-opacity="0.1"
-      />
-      <use
-        xlink:href="#gentle-wave"
-        x="48"
-        y="3"
-        fill="rgba(0, 0, 0, 0.3"
-        fill-opacity="0.1"
-      />
-      <use
-        xlink:href="#gentle-wave"
-        x="48"
-        y="5"
-        fill="rgba(0, 0, 0, 0.3"
-        fill-opacity="0.1"
-      />
-      <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(0, 0, 0, 0.3" />
-    </g>
-  </svg>
-</div>
-<div>
+    <!-- home section ends -->
 
-  <h1 class="bottomText">®Copyrigh 2022 AHT</h1>
-</div>
+    <!-- jquery cdn link  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+
+    <div id="preloader">
+        <div class="p">LOADING</div>
+    </div>
+    <script>
+        paceOptions = {
+            ajax: true,
+            document: true,
+            eventLag: false
+        };
+
+        Pace.on('done', function() {
+            $('.p').delay(500).animate({
+                top: '30%',
+                opacity: '0'
+            }, 3000, $.bez([0.19, 1, 0.22, 1]));
+
+
+            $('#preloader').delay(1500).animate({
+                top: '-100%'
+            }, 2000, $.bez([0.19, 1, 0.22, 1]));
+
+            TweenMax.from(".title", 2, {
+                delay: 1.8,
+                y: 10,
+                opacity: 0,
+                ease: Expo.easeInOut
+            })
+        });
+    </script> -->
+
 </body>
+
 </html>
