@@ -1,61 +1,62 @@
-// $(document).ready(function(){
+$(document).ready(function() {
 
-//     $('#menu').click(function(){
-//       $(this).toggleClass('fa-times');
-//       $('header').toggleClass('toggle');
-//     });
+    $('#menu').click(function() {
+        $(this).toggleClass('fa-times');
+        $('header').toggleClass('toggle');
+    });
 
-//     $(window).on('scroll load',function(){
+    $(window).on('scroll load', function() {
 
-//       $('#menu').removeClass('fa-times');
-//       $('header').removeClass('toggle');
+        $('#menu').removeClass('fa-times');
+        $('header').removeClass('toggle');
 
-//       if($(window).scrollTop() > 0){
-//         $('.top').show();
-//       }else{
-//         $('.top').hide();
-//       }
+        if ($(window).scrollTop() > 0) {
+            $('.top').show();
+        } else {
+            $('.top').hide();
+        }
 
-//     });
+    });
 
-//     // smooth scrolling 
+    // smooth scrolling 
 
-//     $('a[href*="#"]').on('click',function(e){
+    $('a[href*="#"]').on('click', function(e) {
 
-//       e.preventDefault();
+        e.preventDefault();
 
-//       $('html, body').animate({
+        $('html, body').animate({
 
-//         scrollTop : $($(this).attr('href')).offset().top,
+                scrollTop: $($(this).attr('href')).offset().top,
 
-//       },
-//         500, 
-//         'linear'
-//       );
+            },
+            500,
+            'linear'
+        );
 
-//     });
+    });
 
-//   });
+});
 
-let cursor1 = document.querySelector('.cursor-1');
-let cursor2 = document.querySelector('.cursor-2');
+const cursor = document.querySelector(".cursor");
+let btn = document.querySelector("a")
 
-window.onmousemove = (e) => {
-    cursor1.style.top = e.pageY + 'px';
-    cursor1.style.left = e.pageX + 'px';
-    cursor2.style.top = e.pageY + 'px';
-    cursor2.style.left = e.pageX + 'px';
-}
-
-document.querySelectorAll('a').forEach(links => {
-
-    links.onmouseenter = () => {
-        cursor1.classList.add('a');
-        cursor2.classList.add('a');
-    }
-
-    links.onmouseleave = () => {
-        cursor1.classList.remove('a');
-        cursor2.classList.remove('a');
+window.addEventListener("mousemove", (e) => {
+    cursor.style.left = e.pageX + "px";
+    cursor.style.top = e.pageY + "px";
+    cursor.setAttribute("data-fromTop", cursor.offsetTop - scrollY);
+    // console.log(e)
+});
+window.addEventListener("scroll", () => {
+    const fromTop = cursor.getAttribute("data-fromTop");
+    cursor.style.top = scrollY + parseInt(fromTop) + "px";
+    console.log(scrollY);
+});
+window.addEventListener("click", () => {
+    if (cursor.classList.contains("click")) {
+        cursor.classList.remove("click");
+        void cursor.offsetWidth; // trigger a DOM reflow
+        cursor.classList.add("click");
+    } else {
+        cursor.classList.add("click");
     }
 });

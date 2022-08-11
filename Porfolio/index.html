@@ -4,22 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ayhan Hakan Tekir</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="pace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 </head>
 
 <body scroll="no" style="overflow: hidden">
-    <!-- <div class="cursor-1"></div>
-    <div class="cursor-2"></div>
-     -->
 
+    <div class="cursor"></div>
+
+    <div class="spinner-wrapper">
+        <div class="spinner"></div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
     <script src="js/script.js"></script>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <header>
 
         <div class="user">
@@ -30,11 +40,10 @@
 
         <nav class="navbar">
             <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="weareworking.html">about</a></li>
-                <li><a href="weareworking.html">education</a></li>
-                <li><a href="weareworking.html">portfolio</a></li>
-                <li><a href="weareworking.html">contact</a></li>
+                <li><a href="#home">home</a></li>
+                <li><a href="#education">education</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
 
@@ -68,6 +77,16 @@
           </g>
         </svg>
         </div>
+        <div class="social">
+            <a href="https://www.linkedin.com/in/ayhan-hakan-tekir-b07593148/"><img src="/Porfolio/social/facebook.png" alt="" class="social-size">
+            </a>
+            <a href="https://www.linkedin.com/in/ayhan-hakan-tekir-b07593148/"> <img src="/Porfolio/social/twitter.png" alt="" class="social-size">
+            </a>
+            <a href="https://www.linkedin.com/in/ayhan-hakan-tekir-b07593148/"> <img src="/Porfolio/social/instagram.png" alt="" class="social-size">
+            </a>
+            <a href="https://www.linkedin.com/in/ayhan-hakan-tekir-b07593148/"> <img src="/Porfolio/social/linkedin.png" alt="" class="social-size">
+            </a>
+        </div>
     </header>
 
 
@@ -78,13 +97,14 @@
     <!-- home section starts  -->
 
     <section class="home" id="home">
-        <div class="boxContainer">
+        <div class="boxContainer" data-aos="fade-left">
             <div class="boxes">
-                <h3 class="outline">Welcome</h3>
-                <h1 class="outline">I'M <span>Ayhan Hakan Tekir</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio deserunt aspernatur fugiat minus enim ullam repudiandae sint sed magnam tenetur! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, at.
-                </p>
-                <a href="#about"><button class="btn">about me <i class="fas fa-user"></i></button></a>
+                <h1><span>Hi</span> I'M <span>Ayhan Hakan Tekir</span></h1>
+                <h3> about me</h3>
+                <p> I have always motivated myself to learn new things education. My biggest motivation is the desire to learn new things. I started improve myself firstly youtube i make electronic music and shared. My education life time always research
+                    new things and I loved finding solutions. I developed with HTML and CSS at the beginner level before, then I focused on mobile application and i started university then i bought mac book then i install x code and develop simple apps.in
+                    example i developed 'todo' and 'calculator' apps. i improve myself coding with swift language as i show down below, and also i am interest SwiftUI language and improve my coding skills. Best regards,I hope we are working together.</p>
+                <a href="/Porfolio/portfolio/CV2022Agust.pdf" target="_blank" class="cursorActive"><button class="btn">Download CV <i class="fas fa-download"></i> </button></a>
             </div>
         </div>
 
@@ -102,7 +122,7 @@
             x="48"
             y="0"
             fill="rgba(0, 0, 0, 0.3"
-          />
+          /> 
           <use
             xlink:href="#gentle-wave"
             x="48"
@@ -120,53 +140,178 @@
       </svg>
         </div>
         <div>
-            <h2 class="bottomText">®Copyrigh 2022 AHT. <a class="bottomLink" href="contact.html" color="#fff">You can get more info</a> </h2>
+            <h2 class="bottomText">®Copyrigh 2022 AHT. <a class="bottomLink" href="#contact" color="#fff">You can get more info</a> </h2>
         </div>
     </section>
 
-
     <!-- home section ends -->
+
+
+    <!-- education section starts  -->
+
+    <section class="education" id="education">
+
+        <h1 class="heading" data-aos="fade-left"> my <span>education</span> </h1>
+
+        <div class="box-container" data-aos="fade-left">
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2013</span>
+                <h3>FL Studio</h3>
+                <p>YouTube Online Education</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2012</span>
+                <h3>Adobe Photoshop</h3>
+                <p>Tomak Photography, Timuçin Tomak</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2014</span>
+                <h3>Adobe Premier Pro</h3>
+                <p>Tomak Photography, Timuçin Tomak</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2014</span>
+                <h3>Adobe After Effect</h3>
+                <p>Tomak Photography, Timuçin Tomak</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2012</span>
+                <h3>Computer Programing</h3>
+                <p>Gaziantep University Associate Degree <a href="https://www.gantep.edu.tr/"> https://www.gantep.edu.tr/</a></p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>Management Information System (M.I.S)</h3>
+                <p>Europian University of Lefke <a href="https://www.eul.edu.tr/"> https://www.eul.edu.tr/</a></p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>IOS & Swift Complete IOS Development Bootcamp</h3>
+                <p>Angela Yu <a href="https://www.udemy.com/certificate/UC-4d3fbc30-6e5e-4ecd-a73a-cd5d30bfcea4/">https://www.udemy.com/certificate/UC-4d3fbc30-6e5e-4ecd-a73a-cd5d30bfcea4/</a></p>
+            </div>
+            <div class="box">
+                <i class="fas fa-graduation-cap"></i>
+                <span>2022</span>
+                <h3>IOS 15 Basic to Expert Mobile Developing</h3>
+                <p>Atıl Samancıoğlu <a href="https://www.udemy.com/certificate/UC-c4c28380-6170-4778-aa2a-bfe19f0af86b/"> https://www.udemy.com/certificate/UC-c4c28380-6170-4778-aa2a-bfe19f0af86b/</a></p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- education section ends -->
+
+
+    <!-- contact section starts  -->
+
+
+
+    <!-- contact section ends -->
+
+
+    <!-- about section ends -->
+
+
+    <section class="portfolio" id="portfolio">
+
+        <h1 class="heading" data-aos="fade-left"><span>portfolio</span> </h1>
+
+        <div class="box-container" data-aos="fade-left">
+
+            <div class="box">
+                <a href="/Porfolio/phone-stack.html"><img src="images/tumb-image.png" alt=""></a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- portfolio section ends -->
+
+    <!-- contact setion   -->
+
+    <section class="contact" id="contact">
+
+        <h1 class="heading" data-aos="fade-left"> <span>contact</span> me </h1>
+
+        <div class="row" data-aos="fade-left">
+
+            <div class="content">
+
+                <div class="box-container">
+                    <div class="info">
+                        <div class="address">
+                            <h3><i class="fas fa-map-marker-alt"></i>Location: Ardahan caddesi no:4 lefkosia cyprus</h3>
+                        </div>
+
+                        <div class="email">
+                            <h3><i class="fas fa-envelope"></i>Email: aht@ayhanhakanteir.com</h3>
+                        </div>
+
+                        <div class="phone">
+                            <h3><i class="fas fa-phone"></i> Call: +90533 871 8584</h3>
+                        </div>
+
+                        <iframe src="https://maps.google.com/maps?q=lefkosia&t=&z=9&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0; width: 100%; height: 380px;" allowfullscreen></iframe>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="content-form">
+                <form action="https://formsubmit.co/contact@ayhanhakantekir.com" method="POST">
+
+                    <input type="text" name="name" placeholder="name" class="box" required>
+                    <input type="email" name="email" placeholder="email" class="box" required>
+                    <input type="hidden" name="_next" value="http://www.ayhanhakatekir.com">
+                    <textarea name="" id="" cols="30" rows="10" class="box message" placeholder="message" required></textarea>
+                    <button type="submit" class="btn"> send <i class="fas fa-paper-plane"></i> </button>
+                </form>
+            </div>
+        </div>
+
+    </section>
+
 
     <!-- jquery cdn link  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- custom js file link  -->
     <script src="js/script.js"></script>
-
-    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="pace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
-    <div id="preloader">
-        <div class="p">LOADING</div>
-    </div>
+    <script src="js/pagetransitions.js"></script>
+    <!-- 
     <script>
-        paceOptions = {
-            ajax: true,
-            document: true,
-            eventLag: false
-        };
-
-        Pace.on('done', function() {
-            $('.p').delay(500).animate({
-                top: '30%',
-                opacity: '0'
-            }, 3000, $.bez([0.19, 1, 0.22, 1]));
-
-
-            $('#preloader').delay(1500).animate({
-                top: '-100%'
-            }, 2000, $.bez([0.19, 1, 0.22, 1]));
-
-            TweenMax.from(".title", 2, {
-                delay: 1.8,
-                y: 10,
-                opacity: 0,
-                ease: Expo.easeInOut
-            })
-        });
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function() {
+            loader.style.display = "none";
+        })
     </script> -->
+    <script>
+        $(document).ready(function() {
+            //Preloader
+            preloaderFadeOutTime = 500;
+
+            function hidePreloader() {
+                var preloader = $('.spinner-wrapper');
+                preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+        });
+    </script>
 
 </body>
 
