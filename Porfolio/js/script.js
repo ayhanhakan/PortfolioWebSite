@@ -60,3 +60,27 @@ window.addEventListener("click", () => {
         cursor.classList.add("click");
     }
 });
+
+
+
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+    apiKey: "AIzaSyDErNLrluroh-hUyw0FAYeW-g0gzRlou-g",
+    authDomain: "ayhanhakantekir-29407.firebaseapp.com",
+    projectId: "ayhanhakantekir-29407",
+    storageBucket: "ayhanhakantekir-29407.appspot.com",
+    messagingSenderId: "974969829257",
+    appId: "1:974969829257:web:fde2d7154ca6ae5d91d358",
+    measurementId: "G-ST1DQ8WDD1"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
